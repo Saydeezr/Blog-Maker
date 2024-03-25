@@ -1,4 +1,16 @@
-.eachblog {
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#toggleButton{
+    background-color: rgb(71, 71, 70);
+    color: white;
+    cursor: pointer;
+}
+
+.blogpost {
     display: flexbox;
     justify-content: baseline;
     border: 2px solid;
