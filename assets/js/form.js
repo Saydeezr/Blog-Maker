@@ -1,18 +1,22 @@
-const authorName = document.getElementById('username');
-const title = document.getElementById('blogTitle');
-const content = document.getElementById('blogContent');
+
 const submitButton = document.getElementById('submit');
 
+// callback function
 submitButton.addEventListener('click', function (event){
     event.preventDefault();
-
-    const blog = {
-        authorName: authorName.value, 
-        title: title.value,
-        content: content.value,
+    const authorName = document.getElementById('username').value;
+    const title = document.getElementById('blogTitle').value;
+    const content = document.getElementById('blogContent').value;
+    let postedBlog = {
+        authorName: authorName, 
+        title: title,
+        content: content,
+        if !postedBlog : alert('Please fill out forms given')
     };
-    localStorage.setItem('blog', JSON.stringify(blog));
-    console.log ("blog", blog)
+    console.log('postedBlog', postedBlog)
+    localStorage.setItem('postedBlog', JSON.stringify(postedBlog));
+    console.log(localStorage)
+    window.location.pathname = "/C:/Users/sayde/bootcamp/homework/Blog-Maker/blog.html"
 });
 
 
