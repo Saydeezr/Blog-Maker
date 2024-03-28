@@ -11,7 +11,10 @@ submitButton.addEventListener('click', function (event){
         authorName: authorName, 
         title: title,
         content: content,
-        if !postedBlog : alert('Please fill out forms given')
+        
+    // if (authorName() === '' || title() === '' || content() === '') {
+    //     alert('Please fill out all fields before submitting.');
+    //     }
     };
     console.log('postedBlog', postedBlog)
     localStorage.setItem('postedBlog', JSON.stringify(postedBlog));
