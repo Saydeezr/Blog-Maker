@@ -11,15 +11,17 @@ submitButton.addEventListener('click', function (event){
         authorName: authorName, 
         title: title,
         content: content,
-        
-    // if (authorName() === '' || title() === '' || content() === '') {
-    //     alert('Please fill out all fields before submitting.');
-    //     }
     };
-    console.log('postedBlog', postedBlog)
+    if (authorName === '' || 
+        title === '' || 
+        content === '') {
+        alert('Please fill out all fields before submitting.');
+        } else {
+            console.log('postedBlog', postedBlog)
     localStorage.setItem('postedBlog', JSON.stringify(postedBlog));
     console.log(localStorage)
     window.location.pathname = "/C:/Users/sayde/bootcamp/homework/Blog-Maker/blog.html"
+        }
 });
 
 
