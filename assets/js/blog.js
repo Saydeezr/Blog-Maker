@@ -24,5 +24,6 @@ for (let i = 0; i < showData.length; i++) {
     sectionEl.appendChild(lineEl)
     sectionEl.appendChild(pEl)
     sectionEl.appendChild(captionEl)
+    captionEl.classList.add('author')
     contentBox.appendChild(sectionEl)
 }
