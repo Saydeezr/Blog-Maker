@@ -11,8 +11,6 @@ nav {
 }
 
 .blogpost {
-    display: flexbox;
-    justify-content: baseline;
     border: 2px solid;
     padding: 15px 5px;
 }

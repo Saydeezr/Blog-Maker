@@ -3,6 +3,7 @@ const submitButton = document.getElementById('submit');
 
 // callback function
 submitButton.addEventListener('click', function (event){
+    const blogPostHistory = JSON.parse(localStorage.getItem('postedBlog')) || []
     event.preventDefault();
     const authorName = document.getElementById('username').value;
     const title = document.getElementById('blogTitle').value;
@@ -18,7 +19,8 @@ submitButton.addEventListener('click', function (event){
         alert('Please fill out all fields before submitting.');
         } else {
             console.log('postedBlog', postedBlog)
-    localStorage.setItem('postedBlog', JSON.stringify(postedBlog));
+            blogPostHistory.push(postedBlog)
+    localStorage.setItem('postedBlog', JSON.stringify(blogPostHistory));
     console.log(localStorage)
     window.location.pathname = "/C:/Users/sayde/bootcamp/homework/Blog-Maker/blog.html"
         }

@@ -1,5 +1,11 @@
-body {
+
+
+#togglePgOne {
     display: flexbox;
-    justify-content: center;
+    float: right;
+    cursor: pointer; 
 }
 
+#togglePgOne:hover {
+    background-color: rgb(134, 134, 134);
+  }

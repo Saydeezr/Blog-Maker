@@ -1,16 +1,28 @@
-//Not sure I need this first one
-// const blogs = document.querySelectorAll('.blogpost')
-const firstBlog = document.getElementById('blogone');
-const secondBlog = document.getElementById('blogtwo');
-const thirdBlog = document.getElementById('blogthree');
-const fourthBlog = document.getElementById('blogfour');
+const blogs = document.querySelectorAll('.blogpost')
+const firstBlog = document.getElementById('sectionOne');
+const secondBlog = document.getElementById('sectionTwo');
+const thirdBlog = document.getElementById('sectionThree');
+const fourthBlog = document.getElementById('sectionFour');
 
-
-let showData = JSON.parse(window.localStorage.getItem('postedBlog'));
+const contentBox = document.getElementById('content')
+const showData = JSON.parse(localStorage.getItem('postedBlog'));
 console.log(showData);
 
 
-// let allBlogs = [firstBlog, secondBlog, thirdBlog, fourthBlog];
-// allBlogs.forEach((element) => {
-//     copyItems.push(showData)
-// });
+for (let i = 0; i < showData.length; i++) {
+    console.log(showData[i]);
+    let h2El = document.createElement('h2')
+    h2El.textContent = showData[i].title
+    let lineEl = document.createElement('hr')
+    let pEl = document.createElement('p')
+    pEl.textContent = showData[i].content
+    let captionEl = document.createElement('caption')
+    captionEl.textContent = showData[i].authorName
+    let sectionEl = document.createElement('section')
+    sectionEl.classList.add("blogpost")
+    sectionEl.appendChild(h2El)
+    sectionEl.appendChild(lineEl)
+    sectionEl.appendChild(pEl)
+    sectionEl.appendChild(captionEl)
+    contentBox.appendChild(sectionEl)
+}
