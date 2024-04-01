@@ -40,3 +40,16 @@ footer {
     flex-direction: row;
     align-items: flex-end;
 }
+
+
+.dark {
+    background-color:rgb(35, 68, 67);
+    height: 100vh;
+    color: #c8dee4
+
+  }
+
+  .dark form a:hover {
+    background-color: #111;
+  }
+  

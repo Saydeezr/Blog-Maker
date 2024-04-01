@@ -1,5 +1,8 @@
 
 const submitButton = document.getElementById('submit');
+const themeSwitcher = document.getElementById('themeswitcher');
+const container = document.querySelector('.container')
+
 
 // callback function
 submitButton.addEventListener('click', function (event){
@@ -27,4 +30,27 @@ submitButton.addEventListener('click', function (event){
 });
 
 
+let mode = 'light';
 
+const theme = () => {
+    mode = mode === 'light' ? 'dark' : 'light'
+    container.setAttribute('class', `container ${mode}`)
+}
+
+themeSwitcher.addEventListener('click', function () {
+    theme(); 
+});
+
+//themeSwitcher.addEventListener('click', function () {
+  //  console.log('Hi')
+//});
+
+//themeSwitcher.addEventListener('click', function(){
+  //  if (mode === 'light') {
+    //    mode = 'dark';
+      //  container.setAttribute('class', 'dark');
+    //} else {
+      //  mode = 'light';
+        //container.setAttribute('class', 'light');
+    //}
+//});

@@ -1,11 +1,27 @@
-
-
-#togglePgOne {
-    display: flexbox;
-    float: right;
-    cursor: pointer; 
+body {
+    background-color: aliceblue;
+    color: #3d3d3d;
 }
 
-#togglePgOne:hover {
-    background-color: rgb(134, 134, 134);
+header{
+    margin: 10px;
+    padding: 10px;
+}
+
+.light {
+    background-color:  aliceblue;
+    color: #3d3d3d;
+    height: 100vh;
   }
+
+  .dark {
+    background-color:rgb(35, 68, 67);
+    height: 100vh;
+    color: #c8dee4
+
+  }
+
+  .dark form a:hover {
+    background-color: #111;
+  }
+  
