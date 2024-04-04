@@ -41,16 +41,3 @@ themeSwitcher.addEventListener('click', function () {
     theme(); 
 });
 
-//themeSwitcher.addEventListener('click', function () {
-  //  console.log('Hi')
-//});
-
-//themeSwitcher.addEventListener('click', function(){
-  //  if (mode === 'light') {
-    //    mode = 'dark';
-      //  container.setAttribute('class', 'dark');
-    //} else {
-      //  mode = 'light';
-        //container.setAttribute('class', 'light');
-    //}
-//});
