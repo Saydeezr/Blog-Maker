@@ -1,37 +1,54 @@
 body{
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
+    color: #3d3d3d;
+    background: linear-gradient(to right, rgb(231, 231, 231), #eabdff, #ffffff)
 }
 .header{
-    background-color: rgb(170, 216, 228);
-    border: 5px dotted rgb(0, 88, 84);
-    color:rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 20px;
+    
 }
 
 #toggleButton{
-    background-color: rgb(0, 88, 84);
+    background-color: #553c9a;
     color: white;
     cursor: pointer;
+    border-radius: 50%;
 }
 
+#backButton{
+    background-color: #553c9a;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 .blogpost {
-    border: 2px solid;
+    border: 3px solid #553c9a;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     padding: 15px 5px;
     margin-top: 10px;
     background-color: rgb(247, 254, 255);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Zeyada", cursive;
 }
 
 .author {
     font-style: italic;
-    color: gray;
+    color: rgb(88, 79, 109);
 }
 
 footer {
