@@ -2,5 +2,6 @@ This site is used to create and store blog posts by the user. It is easy to use 
 
 https://saydeezr.github.io/Blog-Maker/
 
-![image](https://github.com/Saydeezr/Blog-Maker/assets/157931019/327e1da7-15cc-43d4-beb4-576c8332833a)
+![image](https://github.com/Saydeezr/Blog-Maker/assets/157931019/7ee0a9e5-10d0-44cd-8d05-7dfb638f2545)
+
 
