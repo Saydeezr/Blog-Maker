@@ -27,6 +27,8 @@ nav {
     color: white;
     cursor: pointer;
     border-radius: 50%;
+    height: 40px;
+    width: 70px;
 }
 
 #backButton{
@@ -34,6 +36,8 @@ nav {
     color: white;
     cursor: pointer;
     border-radius: 50%;
+    height: 40px;
+    width: 70px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Zeyada&display=swap');
@@ -41,7 +45,7 @@ nav {
     border: 3px solid #553c9a;
     border-radius: 8px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    padding: 15px 5px;
+    padding: 15px 25px;
     margin-top: 10px;
     background-color: rgb(247, 254, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
