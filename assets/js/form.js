@@ -5,7 +5,6 @@ const container = document.querySelector('.container')
 
 // callback function
 submitButton.addEventListener('click', function (event){
-    
     event.preventDefault();
 
     //get the input of the fields user has typed
