@@ -34,7 +34,7 @@ submitButton.addEventListener('click', function (event){
             console.log(localStorage)
             console.log('postedBlog', postedBlog)
              
-            window.location.pathname = "./blog.html"
+            window.location.replace('blog.html') 
         }
 });
 
